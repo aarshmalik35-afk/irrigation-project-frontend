@@ -1,8 +1,7 @@
-
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://irrigation-project-vipu.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL || "https://irrigation-project-vipu.onrender.com",
 });
 
 export default api;
